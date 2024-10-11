@@ -7,11 +7,15 @@ public class usuarios {
     int numAge;
     int numCc;
 
-    public usuarios(String id, String senha, int numAge, int numCc) {
+    /*public usuarios(String id, String senha, int numAge, int numCc) {
         this.id = id;
         this.senha = senha;
         this.numAge = numAge;
         this.numCc = numCc;
+    }*/
+    
+    public usuarios(){
+        
     }
 
     public String getId() {
@@ -46,4 +50,14 @@ public class usuarios {
         this.numCc = numCc;
     }
     
+    public String dadosSQLInsert(){
+        String dadosClientes;
+        dadosClientes = "'"
+        + this.getId()+ "','"
+	+ this.getSenha()+ "','"
+	+ this.getNumAge()+ "','"
+	+ this.getNumCc()+ "'";
+        
+        return dadosClientes;
+    }
 }

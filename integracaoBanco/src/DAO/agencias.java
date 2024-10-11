@@ -13,13 +13,17 @@ public class agencias {
     String cepAge;
     String foneAge;
 
-    public agencias(int numAge, String nomeAge, String endeAge, String CidaAge, String ufAge, String cepAge) {
+   /* public agencias(int numAge, String nomeAge, String endeAge, String CidaAge, String ufAge, String cepAge) {
         this.numAge = numAge;
         this.nomeAge = nomeAge;
         this.endeAge = endeAge;
         this.CidaAge = CidaAge;
         this.ufAge = ufAge;
         this.cepAge = cepAge;
+    }*/
+    
+    public agencias(){
+        
     }
     
 
@@ -103,5 +107,21 @@ public class agencias {
         return foneAge;
     }
     
+    public String dadosSQLInsert(){
+        String dadosAgencia;
+        dadosAgencia = "'"
+        + this.getNumAge()+ "','"
+	+ this.getNomeAge()+ "','"
+	+ this.getEndeAge()+ "','"
+	+ this.getNumeAge()+ "','"
+	+ this.getComplAge()+ "','"
+	+ this.getBairAre()+ "','"
+	+ this.getCidaAge()+ "','"
+	+ this.getUfAge()+ "','"
+	+ this.getCepAge()+ "','"
+	+ this.getFoneAge()+ "'";
+        
+        return dadosAgencia;
+    }
     
 }

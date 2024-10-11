@@ -5,9 +5,13 @@ public class historicos {
     int idHis;
     String desHis;
 
-    public historicos(int idHis, String desHis) {
+    /*public historicos(int idHis, String desHis) {
         this.idHis = idHis;
         this.desHis = desHis;
+    }*/
+    
+    public historicos(){
+        
     }
     
 
@@ -25,6 +29,15 @@ public class historicos {
 
     public void setDesHis(String desHis) {
         this.desHis = desHis;
+    }
+    
+    public String dadosSQLInsert(){
+        String dadosHistorico;
+        dadosHistorico = "'"
+        + this.getIdHis()+ "','"
+	+ this.getDesHis()+ "'";
+        
+        return dadosHistorico;
     }
     
 }

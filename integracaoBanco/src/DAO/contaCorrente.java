@@ -7,10 +7,14 @@ public class contaCorrente {
     int idCli;
     int Saldo;
 
-    public contaCorrente(int numAge, int numCc, int idCli) {
+    /*public contaCorrente(int numAge, int numCc, int idCli) {
         this.numAge = numAge;
         this.numCc = numCc;
         this.idCli = idCli;
+    }*/
+    
+    public contaCorrente(){
+        
     }
     
 
@@ -46,4 +50,14 @@ public class contaCorrente {
         this.Saldo = Saldo;
     }
     
+    public String dadosSQLInsert(){
+        String dadosContaCorrente;
+        dadosContaCorrente = "'"
+        + this.getNumAge()+ "','"
+	+ this.getNumCc()+ "','"
+	+ this.getIdCli()+ "','"
+	+ this.getSaldo()+ "'";
+        
+        return dadosContaCorrente;
+    }
 }

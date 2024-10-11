@@ -6,7 +6,7 @@ import java.util.Date;
 public class movimentacao {
     int numAge;
     int numCc;
-    Date dataMov;
+    String dataMov;
     String numDocto;
     String DebitoCredito;
     int idHis;
@@ -14,7 +14,7 @@ public class movimentacao {
     int valor;
     int saldo;
 
-    public movimentacao(int numAge, int numCc, Date dataMov, String numDocto, String DebitoCredito, int idHis, int valor) {
+    /*public movimentacao(int numAge, int numCc, Date dataMov, String numDocto, String DebitoCredito, int idHis, int valor) {
         this.numAge = numAge;
         this.numCc = numCc;
         this.dataMov = dataMov;
@@ -22,6 +22,10 @@ public class movimentacao {
         this.DebitoCredito = DebitoCredito;
         this.idHis = idHis;
         this.valor = valor;
+    }*/
+    
+    public movimentacao(){
+        
     }
 
     public int getNumAge() {
@@ -32,7 +36,7 @@ public class movimentacao {
         return numCc;
     }
 
-    public Date getDataMov() {
+    public String getDataMov() {
         return dataMov;
     }
 
@@ -68,7 +72,7 @@ public class movimentacao {
         this.numCc = numCc;
     }
 
-    public void setDataMov(Date dataMov) {
+    public void setDataMov(String dataMov) {
         this.dataMov = dataMov;
     }
 
@@ -96,5 +100,19 @@ public class movimentacao {
         this.saldo = saldo;
     }
     
+        public String dadosSQLInsert(){
+        String dadosMovimentacao;
+        dadosMovimentacao = "'"
+        + this.getNumAge()+ "','"
+	+ this.getNumCc() + "','"
+	+ this.getDataMov()+ "','"
+	+ this.getNumDocto()+ "','"
+	+ this.getDebitoCredito()+ "','"
+	+ this.getIdHis()+ "','"
+	+ this.getComplHis()+ "','"
+	+ this.getValor()+ "','"
+	+ this.getSaldo()+ "'";
         
+        return dadosMovimentacao;
+    }
 }
