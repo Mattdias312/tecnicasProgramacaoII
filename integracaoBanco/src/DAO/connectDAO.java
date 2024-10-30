@@ -59,20 +59,6 @@ public class connectDAO {
             Statement stmt;
             try {
               stmt = con.createStatement();
-              
-              /*String sq1 = "INSERT INTO dbo."+banco+
-                      " VALUES ('"+novo_cliente.getIdCli()+
-                      "', '"+novo_cliente.getNomeCli()+
-                      "', '"+novo_cliente.getEndeCli()+
-                      "', '"+novo_cliente.getComplCli()+
-                      "', '"+novo_cliente.getBairCli()+
-                      "', '"+novo_cliente.getCidaCli()+
-                      "', '"+novo_cliente.getUfCli()+
-                      "', '"+novo_cliente.getCepCli()+
-                      "', '"+novo_cliente.getFoneCli()+
-                      "', '"+novo_cliente.getCpfCli()+
-                      "', '"+novo_cliente.getDataNasc()+
-                      "', '"+novo_cliente.getCnpjCli()+"')";*/
               String sql = "INSERT INTO dbo."+tabela+" "+" VALUES ("+strDados+")";
               JOptionPane.showMessageDialog(null,"String de insert> "+sql);
               

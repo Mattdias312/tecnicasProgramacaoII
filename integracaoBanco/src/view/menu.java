@@ -27,188 +27,212 @@ public class menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenu3 = new javax.swing.JMenu();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        cadClientes = new javax.swing.JMenuItem();
+        alterarAgencia = new javax.swing.JMenuItem();
+        excuirClientes = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
+        cadAgencias = new javax.swing.JMenuItem();
+        alterarAgencias = new javax.swing.JMenuItem();
+        excluirAgencias = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
-        jMenuItem15 = new javax.swing.JMenuItem();
-        jMenuItem16 = new javax.swing.JMenuItem();
-        jMenuItem17 = new javax.swing.JMenuItem();
-        jMenuItem18 = new javax.swing.JMenuItem();
+        cadContaCorrente = new javax.swing.JMenuItem();
+        alterarContaCorrente = new javax.swing.JMenuItem();
+        excluirContaCorrente = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        cadHistorico = new javax.swing.JMenuItem();
+        alterarHistorico = new javax.swing.JMenuItem();
+        excluirHistorico = new javax.swing.JMenuItem();
+        jMenu8 = new javax.swing.JMenu();
+        cadMovimentacao = new javax.swing.JMenuItem();
+        alterarMovimentacao = new javax.swing.JMenuItem();
+        excluirMovimentacao = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        cadUsuario = new javax.swing.JMenuItem();
+        alterarUsuario = new javax.swing.JMenuItem();
+        excluirUsuario = new javax.swing.JMenuItem();
 
         jMenu3.setText("jMenu3");
 
+        jMenu5.setText("File");
+        jMenuBar2.add(jMenu5);
+
+        jMenu6.setText("Edit");
+        jMenuBar2.add(jMenu6);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Cadastro");
+        jMenu1.setText("Clientes");
 
-        jMenuItem1.setText("Clientes");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        cadClientes.setText("Cadastrar");
+        cadClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                cadClientesActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(cadClientes);
 
-        jMenuItem2.setText("Agências");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        alterarAgencia.setText("Alterar");
+        alterarAgencia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                alterarAgenciaActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenu1.add(alterarAgencia);
 
-        jMenuItem3.setText("Conta Corrente");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        excuirClientes.setText("Excluir");
+        excuirClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                excuirClientesActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
-
-        jMenuItem4.setText("Históricos");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem4);
-
-        jMenuItem5.setText("Movimentação");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem5);
-
-        jMenuItem6.setText("Usuários");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem6);
+        jMenu1.add(excuirClientes);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Alterar");
+        jMenu2.setText("Agências");
 
-        jMenuItem7.setText("Clientes");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+        cadAgencias.setText("Cadastrar");
+        cadAgencias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
+                cadAgenciasActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem7);
+        jMenu2.add(cadAgencias);
 
-        jMenuItem8.setText("Agências");
-        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+        alterarAgencias.setText("Alterar");
+        alterarAgencias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem8ActionPerformed(evt);
+                alterarAgenciasActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem8);
+        jMenu2.add(alterarAgencias);
 
-        jMenuItem9.setText("Conta Corrente");
-        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+        excluirAgencias.setText("Excluir");
+        excluirAgencias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem9ActionPerformed(evt);
+                excluirAgenciasActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem9);
-
-        jMenuItem10.setText("Históricos");
-        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem10ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuItem10);
-
-        jMenuItem11.setText("Movimentação");
-        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem11ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuItem11);
-
-        jMenuItem12.setText("Usuários");
-        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem12ActionPerformed(evt);
-            }
-        });
-        jMenu2.add(jMenuItem12);
+        jMenu2.add(excluirAgencias);
 
         jMenuBar1.add(jMenu2);
 
-        jMenu4.setText("Excluir");
+        jMenu4.setText("Conta Corrente");
 
-        jMenuItem13.setText("Clientes");
-        jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
+        cadContaCorrente.setText("Cadastrar");
+        cadContaCorrente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem13ActionPerformed(evt);
+                cadContaCorrenteActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem13);
+        jMenu4.add(cadContaCorrente);
 
-        jMenuItem14.setText("Agências");
-        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
+        alterarContaCorrente.setText("Alterar");
+        alterarContaCorrente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem14ActionPerformed(evt);
+                alterarContaCorrenteActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem14);
+        jMenu4.add(alterarContaCorrente);
 
-        jMenuItem15.setText("Conta Corrente");
-        jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
+        excluirContaCorrente.setText("Excluir");
+        excluirContaCorrente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem15ActionPerformed(evt);
+                excluirContaCorrenteActionPerformed(evt);
             }
         });
-        jMenu4.add(jMenuItem15);
-
-        jMenuItem16.setText("Históricos");
-        jMenuItem16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem16ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem16);
-
-        jMenuItem17.setText("Movimentação");
-        jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem17ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem17);
-
-        jMenuItem18.setText("Usuários");
-        jMenuItem18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem18ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem18);
+        jMenu4.add(excluirContaCorrente);
 
         jMenuBar1.add(jMenu4);
+
+        jMenu7.setText("Histórico");
+
+        cadHistorico.setText("Cadastrar");
+        cadHistorico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadHistoricoActionPerformed(evt);
+            }
+        });
+        jMenu7.add(cadHistorico);
+
+        alterarHistorico.setText("Alterar");
+        alterarHistorico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alterarHistoricoActionPerformed(evt);
+            }
+        });
+        jMenu7.add(alterarHistorico);
+
+        excluirHistorico.setText("Excluir");
+        excluirHistorico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                excluirHistoricoActionPerformed(evt);
+            }
+        });
+        jMenu7.add(excluirHistorico);
+
+        jMenuBar1.add(jMenu7);
+
+        jMenu8.setText("Movimentação");
+
+        cadMovimentacao.setText("Cadastrar");
+        cadMovimentacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadMovimentacaoActionPerformed(evt);
+            }
+        });
+        jMenu8.add(cadMovimentacao);
+
+        alterarMovimentacao.setText("Alterar");
+        alterarMovimentacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alterarMovimentacaoActionPerformed(evt);
+            }
+        });
+        jMenu8.add(alterarMovimentacao);
+
+        excluirMovimentacao.setText("Excluir");
+        excluirMovimentacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                excluirMovimentacaoActionPerformed(evt);
+            }
+        });
+        jMenu8.add(excluirMovimentacao);
+
+        jMenuBar1.add(jMenu8);
+
+        jMenu9.setText("Usuários");
+
+        cadUsuario.setText("Cadastrar");
+        cadUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cadUsuarioActionPerformed(evt);
+            }
+        });
+        jMenu9.add(cadUsuario);
+
+        alterarUsuario.setText("Alterar");
+        alterarUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alterarUsuarioActionPerformed(evt);
+            }
+        });
+        jMenu9.add(alterarUsuario);
+
+        excluirUsuario.setText("Excluir");
+        excluirUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                excluirUsuarioActionPerformed(evt);
+            }
+        });
+        jMenu9.add(excluirUsuario);
+
+        jMenuBar1.add(jMenu9);
 
         setJMenuBar(jMenuBar1);
 
@@ -216,7 +240,7 @@ public class menu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 547, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -226,107 +250,131 @@ public class menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void cadClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadClientesActionPerformed
         // TODO add your handling code here:
         String operacao = "Incluir";
-        Cad_Cliente cadCliente = new Cad_Cliente();
+        Cad_Cliente cadCliente = new Cad_Cliente(operacao);
         cadCliente.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_cadClientesActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void cadAgenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadAgenciasActionPerformed
         // TODO add your handling code here:
         String operacao = "Incluir";
-        Cad_Agencia cadAgencia = new Cad_Agencia();
+        Cad_Agencia cadAgencia = new Cad_Agencia(operacao);
         cadAgencia.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_cadAgenciasActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
+    private void cadHistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadHistoricoActionPerformed
+            // TODO add your handling code here:
         String operacao = "Incluir";
-        Cad_Historico cadHistorico = new Cad_Historico();
+        Cad_Historico cadHistorico = new Cad_Historico(operacao);
         cadHistorico.setVisible(true);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_cadHistoricoActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void cadContaCorrenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadContaCorrenteActionPerformed
         // TODO add your handling code here:
         String operacao = "Incluir";
-        Cad_Conta_Corrente cadContaCorrente = new Cad_Conta_Corrente();
+        Cad_Conta_Corrente cadContaCorrente = new Cad_Conta_Corrente(operacao);
         cadContaCorrente.setVisible(true);
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_cadContaCorrenteActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+    private void cadMovimentacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadMovimentacaoActionPerformed
         // TODO add your handling code here:
         String operacao = "Incluir";
-        Cad_Movimentacao cadMovimentacao = new Cad_Movimentacao();
+        Cad_Movimentacao cadMovimentacao = new Cad_Movimentacao(operacao);
         cadMovimentacao.setVisible(true);
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    }//GEN-LAST:event_cadMovimentacaoActionPerformed
 
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+    private void cadUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadUsuarioActionPerformed
         // TODO add your handling code here:
         String operacao = "Incluir";
-        Cad_Usuario cadUsuario = new Cad_Usuario();
+        Cad_Usuario cadUsuario = new Cad_Usuario(operacao);
         cadUsuario.setVisible(true);
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
+    }//GEN-LAST:event_cadUsuarioActionPerformed
 
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+    private void alterarAgenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarAgenciaActionPerformed
         // TODO add your handling code here:
         String operacao = "Alterar";
         Cad_Cliente acesso_cliente = new Cad_Cliente(operacao);
         acesso_cliente.setVisible(true);
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
+    }//GEN-LAST:event_alterarAgenciaActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+    private void alterarAgenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarAgenciasActionPerformed
         // TODO add your handling code here:
-        /*String operacao = "Alterar";
+        String operacao = "Alterar";
         Cad_Agencia acesso_agencia = new Cad_Agencia(operacao);
-        acesso_agencia.setVisible(true);*/
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
+        acesso_agencia.setVisible(true);
+    }//GEN-LAST:event_alterarAgenciasActionPerformed
 
-    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+    private void excluirAgenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirAgenciasActionPerformed
         // TODO add your handling code here:
-        /*String operacao = "Alterar";
-        Cad_Conta_Corrente acesso_conta_corrente = new Cad_Conta_Corrente(operacao);
-        acesso_conta_corrente.setVisible(true);*/
-    }//GEN-LAST:event_jMenuItem9ActionPerformed
+        String operacao = "Excluir";
+        Cad_Agencia acesso_agencia = new Cad_Agencia(operacao);
+        acesso_agencia.setVisible(true);
+    }//GEN-LAST:event_excluirAgenciasActionPerformed
 
-    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem10ActionPerformed
-
-    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem11ActionPerformed
-
-    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem12ActionPerformed
-
-    private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
+    private void excuirClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excuirClientesActionPerformed
         // TODO add your handling code here:
         String operacao = "Excluir";
         Cad_Cliente acesso_cliente = new Cad_Cliente(operacao);
         acesso_cliente.setVisible(true);
-    }//GEN-LAST:event_jMenuItem13ActionPerformed
+    }//GEN-LAST:event_excuirClientesActionPerformed
 
-    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+    private void excluirContaCorrenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirContaCorrenteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem14ActionPerformed
+        String operacao = "Excluir";
+        Cad_Conta_Corrente acesso_conta_corrente = new Cad_Conta_Corrente(operacao);
+        acesso_conta_corrente.setVisible(true);
+    }//GEN-LAST:event_excluirContaCorrenteActionPerformed
 
-    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+    private void alterarContaCorrenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarContaCorrenteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem15ActionPerformed
+        String operacao = "Alterar";
+        Cad_Historico cadHistorico = new Cad_Historico(operacao);
+        cadHistorico.setVisible(true);
+    }//GEN-LAST:event_alterarContaCorrenteActionPerformed
 
-    private void jMenuItem16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem16ActionPerformed
+    private void alterarHistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarHistoricoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem16ActionPerformed
+        String operacao = "Alterar";
+        Cad_Historico cadHistorico = new Cad_Historico(operacao);
+        cadHistorico.setVisible(true);
+    }//GEN-LAST:event_alterarHistoricoActionPerformed
 
-    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
+    private void excluirHistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirHistoricoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem17ActionPerformed
+        String operacao = "Excluir";
+        Cad_Historico cadHistorico = new Cad_Historico(operacao);
+        cadHistorico.setVisible(true);
+    }//GEN-LAST:event_excluirHistoricoActionPerformed
 
-    private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
+    private void alterarMovimentacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarMovimentacaoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem18ActionPerformed
+        String operacao = "Alterar";
+        Cad_Movimentacao cadMovimentacao = new Cad_Movimentacao(operacao);
+        cadMovimentacao.setVisible(true);
+    }//GEN-LAST:event_alterarMovimentacaoActionPerformed
+
+    private void excluirMovimentacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirMovimentacaoActionPerformed
+        // TODO add your handling code here:
+        String operacao = "Excluir";
+        Cad_Movimentacao cadMovimentacao = new Cad_Movimentacao(operacao);
+        cadMovimentacao.setVisible(true);
+    }//GEN-LAST:event_excluirMovimentacaoActionPerformed
+
+    private void alterarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alterarUsuarioActionPerformed
+        // TODO add your handling code here:
+        String operacao = "Alterar";
+        Cad_Usuario cadUsuario = new Cad_Usuario(operacao);
+        cadUsuario.setVisible(true);
+    }//GEN-LAST:event_alterarUsuarioActionPerformed
+
+    private void excluirUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirUsuarioActionPerformed
+        // TODO add your handling code here:
+        String operacao = "Excluir";
+        Cad_Usuario cadUsuario = new Cad_Usuario(operacao);
+        cadUsuario.setVisible(true);
+    }//GEN-LAST:event_excluirUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -364,28 +412,34 @@ public class menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem alterarAgencia;
+    private javax.swing.JMenuItem alterarAgencias;
+    private javax.swing.JMenuItem alterarContaCorrente;
+    private javax.swing.JMenuItem alterarHistorico;
+    private javax.swing.JMenuItem alterarMovimentacao;
+    private javax.swing.JMenuItem alterarUsuario;
+    private javax.swing.JMenuItem cadAgencias;
+    private javax.swing.JMenuItem cadClientes;
+    private javax.swing.JMenuItem cadContaCorrente;
+    private javax.swing.JMenuItem cadHistorico;
+    private javax.swing.JMenuItem cadMovimentacao;
+    private javax.swing.JMenuItem cadUsuario;
+    private javax.swing.JMenuItem excluirAgencias;
+    private javax.swing.JMenuItem excluirContaCorrente;
+    private javax.swing.JMenuItem excluirHistorico;
+    private javax.swing.JMenuItem excluirMovimentacao;
+    private javax.swing.JMenuItem excluirUsuario;
+    private javax.swing.JMenuItem excuirClientes;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
+    private javax.swing.JMenu jMenu8;
+    private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem15;
-    private javax.swing.JMenuItem jMenuItem16;
-    private javax.swing.JMenuItem jMenuItem17;
-    private javax.swing.JMenuItem jMenuItem18;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenuBar jMenuBar2;
     // End of variables declaration//GEN-END:variables
 }
