@@ -157,5 +157,24 @@ public class clientes {
         return dadosClientes;
     }
     
+    public String alteraDadosSqlValues() {
+        String dadosClientes;
+       dadosClientes = "NOME='"
+               + this.getNomeCli() + "',ENDERECO='"
+               + this.getEndeCli() + "',NUMEROCLI='"
+               + this.getNumeCli() + "',COMPLEMENTO='"
+               + this.getComplCli() + "',BAIRRO='"
+               + this.getBairCli()  + "',CIDADE='"
+               + this.getCidaCli() + "',ESTADO='"
+               + this.getUfCli() + "',CEP='"
+               + this.getCepCli() + "',TELEFONE='"
+               + this.getFoneCli() + "',CPF='"
+               + this.getCpfCli() + "',DATANASCIMENTO='"
+               + this.getDataNasc() + "',CNPJ='"
+                +this.getCnpjCli() + "'";
+        
+        return dadosClientes;
+    }
+    
     
 }

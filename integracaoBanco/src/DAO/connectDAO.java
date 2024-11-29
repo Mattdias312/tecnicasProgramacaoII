@@ -40,8 +40,6 @@ public class connectDAO {
     }
 
     public void insereRegistroJFBD(String tabela, String strDados) {
-        //String banco2;
-        //banco2 = "CLIENTES";
 
         String caminho = "jdbc:sqlserver://localhost:1433;databaseName=MOV_CONTA_CORRENTE;encrypt=true;trustServerCertificate=true;";
         String usuario = "sa";
@@ -76,4 +74,55 @@ public class connectDAO {
             }
         //}
     }
+    
+    public void alteraRegistroJFDB (String tabela, String strDados,String pesquisaId){    }
+        
+        public clientes pesquisaClienteJFBD (String tabela, String pesquisaId){
+            
+            String tabelaSGBD = "CLIENTES";
+            if(tabela.equals(tabelaSGBD)){
+                clientes clientesReturn = new clientes();
+                
+                con = connectDB();
+                
+                Statement stmt;
+                try {
+                    stmt = con.createStatement();
+                    
+                    String sql = "SELECT * FROM " + tabela + "WHERE " + pesquisaId;
+                    
+                    try {
+                        ResultSet dados;
+                        dados = stmt.executeQuery(sql);
+                        if (dados.next() == false){
+                        JOptionPane.showMessageDialog(null, "Nenhum registro foi encontrado para ...");
+                        
+                    } else{
+                            clientesReturn.setIdCli(dados.getInt(1));
+                            clientesReturn.setNomeCli(dados.getString(3));
+                            clientesReturn.setEndeCli(dados.getString(4));
+                            clientesReturn.setBairCli(dados.getString(5));
+                            clientesReturn.setCidaCli(dados.getString(6));
+                            clientesReturn.setUfCli(dados.getString(7));
+                            clientesReturn.setFoneCli(dados.getString(8));
+                            clientesReturn.set(dados.getString(9));
+                            clientesReturn.setDataNasc(dados.getString(10));
+                            clientesReturn.set(dados.getString(11));
+                            clientesReturn.set(dados.getString(2));
+                        }
+                        con.close();
+                        return clientesReturn;
+                    } catch (SQLException erro){
+                        JOptionPane.showMessageDialog(null, "Erro de conexão, connectDAO Consulta - ...");
+                        JOptionPane.showMessageDialog(null, "\n Erro de conxão, ConnectDAO - Estado =>...");
+                        JOptionPane.showMessageDialog(null, "\n Erro de conxão, ConnectDAO - Código =>...");
+                    }
+                    con.close();
+                } catch (SQLException ex) {
+                    Logger.getLogger(connectDAO.class.getName()).log(Level.SEVERE,null,ex);
+                }
+            }
+            
+        }
+
 }

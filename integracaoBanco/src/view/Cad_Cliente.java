@@ -388,6 +388,43 @@ public class Cad_Cliente extends javax.swing.JFrame {
         jTextField12.setText("");
         jTextField13.setText("");
         
+        if(operacaoAtivaGlobal.equals(operacao)){
+            
+            connectDAO objcon = new connectDAO();
+            
+            clientes dados_cliente = new clientes();
+            dados_cliente.setIdCli(Integer.parseInt((jTextField1.getText())));
+            dados_cliente.setNomeCli(jTextField2.getText());
+            dados_cliente.setEndeCli(jTextField3.getText());
+            dados_cliente.setNumeCli(jTextField4.getText());
+            dados_cliente.setComplCli(jTextField5.getText());
+            dados_cliente.setBairCli(jTextField6.getText());
+            dados_cliente.setCidaCli(jTextField7.getText());
+            dados_cliente.setUfCli(jTextField8.getText());
+            dados_cliente.setCepCli(jTextField9.getText());
+            dados_cliente.setFoneCli(jTextField10.getText());
+            dados_cliente.setCpfCli(jTextField11.getText());
+            dados_cliente.setDataNasc(jTextField12.getText());
+            dados_cliente.setCnpjCli(jTextField13.getText());
+            
+            objcon.alteraRegistroJFDB("CLIENTES", dados_cliente.alteraDadosSqlValues(),
+                    "ID_CLIENTES="+jTextField1.getText());
+            
+            jTextField1.setText("");
+            jTextField2.setText("");
+            jTextField3.setText("");
+            jTextField4.setText("");
+            jTextField5.setText("");
+            jTextField6.setText("");
+            jTextField7.setText("");
+            jTextField8.setText("");
+            jTextField9.setText("");
+            jTextField10.setText("");
+            jTextField11.setText("");
+            jTextField12.setText("");
+            jTextField13.setText("");
+        }
+        
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
